@@ -1,0 +1,14 @@
+:root {
+  --menu-text-color: #fff;
+
+  --primary-light: #f06c64;
+  --primary-dark: #ca4549;
+  --secondary-dark: #2d303a;
+
+  --content-bg-color: #f2f2f2;
+  --content-text-color: #666d89;
+
+  --container-opacity: rgba(255, 255, 255, .1);
+
+  --container-padding: 0 40px;
+}

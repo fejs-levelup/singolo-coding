@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+nav {
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--container-padding);
+
+  background: var(--secondary-dark);
+  position: relative;
+}
+
+body > *::after {
+  content: "";
+  height: 6px;
+  width: 100%;
+  background: var(--container-opacity);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  color: var(--menu-text-color);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--primary-light);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+nav li {
+  height: 100%;
+}
+
+nav a {
+  padding: 0 17px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--menu-text-color);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav .active-nav a {
+  color: var(--primary-light);
+}
+
+nav li:hover {
+  background: var(--container-opacity);
+}
+
+#carousel {
+  background: var(--primary-light);
+  height: 600px;
+  position: relative;
+  padding: var(--container-padding);
+}
+
+.right-shev {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.shev svg {
+  fill: var(--primary-dark);
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
