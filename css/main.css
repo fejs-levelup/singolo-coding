@@ -18,6 +18,10 @@ nav {
   position: relative;
 }
 
+body > * {
+  position: relative;
+}
+
 body > *::after {
   content: "";
   height: 6px;
@@ -72,7 +76,6 @@ nav li:hover {
 #carousel {
   background: var(--primary-light);
   height: 600px;
-  position: relative;
   padding: var(--container-padding);
 }
 
@@ -81,8 +84,14 @@ nav li:hover {
   transform-origin: center;
 }
 
+.shev {
+  padding-right: 20px;
+  line-height: 0;
+}
+
 .shev svg {
   fill: var(--primary-dark);
+  width: 20px;
 }
 
 .carousel-container {
@@ -91,6 +100,66 @@ nav li:hover {
   align-items: center;
   height: 100%;
 }
+
+.slide img {
+  width: 100%;
+}
+
+section:not(#contact-form) {
+  color: var(--content-text-color);
+}
+
+#services {
+  padding: 50px 40px;
+  background: var(--content-bg-color);
+}
+
+#services h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.1em;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+#services > p {
+  font: 300 18px/30px "lato";
+  margin-bottom: 20px;
+}
+
+.bullets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bullet {
+  flex-basis: 30vw;
+  display: flex;
+  margin: 15px 0;
+}
+
+.bullet-icon {
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.bullet-title {
+  font: 900 18px/1 "lato";
+  margin-bottom: 15px;
+}
+
+.bullet-text {
+  font-size: 12px;
+  line-height: 1.9em;
+}
+
+
+
 
 
 
