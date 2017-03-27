@@ -10,5 +10,6 @@
 
   --container-opacity: rgba(255, 255, 255, .1);
 
-  --container-padding: 0 40px;
+  --container-padding: 50px 40px;
+  --container-padding-aside: 0 40px;
 }
