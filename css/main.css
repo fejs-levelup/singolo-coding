@@ -275,10 +275,6 @@ img[data-filter] {
   line-height: 1.9em;
 }
 
-.person-socials {
-  /*display: */
-}
-
 .person-socials a {
   text-decoration: none;
   width: 32px;
@@ -320,13 +316,17 @@ img[data-filter] {
   flex-direction: column;
 }
 
-.form-container input {
-  height: 36px;
+.form-container input,
+.form-container textarea {
   border: none;
   background: rgba(146, 20, 20,.25);
   border-radius: 5px;
   padding: 0 10px 0 14px;
   color: #f48c8f;
+}
+
+.form-container input {
+  height: 36px;
   margin-bottom: 14px;
 }
 
@@ -334,10 +334,89 @@ img[data-filter] {
   flex-basis: 33%;
 }
 
+.form-container textarea {
+  height: 200px;
+  line-height: 36px;
+  resize: none;
+}
 
+.form-container button {
+  margin: 14px 0 0;
+  border: none;
+  background: var(--contacts-text-color);
+  color: var(--primary-light);
+  height: 36px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-in;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,.3);
+}
 
+.form-container button:hover {
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,.3);
+  transform: translate(0, -5px);
+}
 
+.contacts-content h4 {
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
 
+.contacts-content p {
+  font-size: 12px;
+  line-height: 1.9em;
+}
+
+.contacts-content [data-icon] {
+  background-image: url(../img/icons-sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 14px;
+  height: 100%;
+  margin-right: 13px;
+}
+
+.contacts-content a {
+  text-decoration: none;
+  color: var(--contacts-text-color);
+}
+
+[data-icon="location"] {
+  background-position: 0 -69px;
+}
+
+[data-icon="phone"] {
+  background-position: 0 -90px;
+}
+
+[data-icon="mail"] {
+  background-position: 0 -112px;
+}
+
+.addresses-container {
+  margin-top: 20px;
+}
+
+footer {
+  height: 74px;
+  background: var(--secondary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--content-text-color);
+  padding: var(--container-padding-aside);
+}
+
+footer::after {
+  display: none;
+}
+
+.social-icons-footer {
+  line-height: 0;
+}
 
 
 
